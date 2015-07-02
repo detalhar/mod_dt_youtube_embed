@@ -17,9 +17,14 @@
 
 defined('_JEXEC') or die('Access Restricted');
 
-require_once dirname(__FILE__) . '/helper.php';
+// require_once dirname(__FILE__) . '/helper.php';
 
 $doc = JFactory::getDocument();
+//params
+$youtube_id = $params->get('youtube_id');
+$width = (int)$params->get('width', 300);
+$height = (int)$params->get('height', 200);
+$autoplay = $params->get('autoplay', 0);
 
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 require JModuleHelper::getLayoutPath('mod_dt_youtube_embed', $params->get('layout','default'));

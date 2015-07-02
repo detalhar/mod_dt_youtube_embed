@@ -16,4 +16,33 @@
 **/
 
 defined('_JEXEC') or die('Access Restricted');
+?>
+<?php if ($youtube_id){ ?>
+ <script>
+      
+      var tag = document.createElement('script');
 
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('dt-ytPlayer', {
+          height: '<?php echo $height ?>',
+          width: '<?php echo $width ?>',
+          videoId: '<?php echo $youtube_id ?>',
+          playerVars: { 'autoplay': <?php echo $autoplay ?>, 'controls':1, 'rel':0},
+          events: {
+            'onReady': onPlayerReady,
+          }
+        });
+      }
+
+        function onPlayerReady(event) {
+      }
+</script>
+<div id="dt-ytPlayer"></div>
+<?php } else {?>
+<p><?php echo JTEXT::_('MOD_DT_YOUTUBE_ERROR')?></p>;
+<?php }?>
