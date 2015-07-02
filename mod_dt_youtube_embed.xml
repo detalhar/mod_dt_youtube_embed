@@ -11,10 +11,8 @@
 	<description>MOD_DT_YOUTUBE_DESC</description>
 	<files>
 		<filename module="mod_dt_youtube_embed">mod_dt_youtube_embed.php</filename>
-		<folder>assets</folder>
 		<folder>language</folder>
 		<folder>tmpl</folder>
-		<filename>helper.php</filename>
 		<filename>mod_dt_youtube_embed.xml</filename>
 		<filename>index.html</filename>
 	</files>
