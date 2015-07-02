@@ -7,7 +7,7 @@
 	<authorURL>http://detalharweb.com.br</authorURL>
 	<copyright>Copyright (C) Detalhar. All rights reserved</copyright>
 	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html or see LICENSE.txt</license>
-	<version>0.1.0</version>
+	<version>1.0.0</version>
 	<description>MOD_DT_YOUTUBE_DESC</description>
 	<files>
 		<filename module="mod_dt_youtube_embed">mod_dt_youtube_embed.php</filename>

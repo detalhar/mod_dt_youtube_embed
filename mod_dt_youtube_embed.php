@@ -4,7 +4,7 @@
 * DT Simple Youtube Embed - Embed Youtube videos in Joomla by Detalhar - http://detalharweb.com.br
 *-------------------------------------------------------------------------------
 * @package DT Simple Youtube Embed
-* @version 0.1.0
+* @version 1.0.0
 * @author Detalhar http://http://detalharweb.com.br
 * @copyright (C) 2015 Detalhar. All Rights Reserved
 * @license - GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html or see LICENSE.txt
